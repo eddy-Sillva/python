@@ -131,6 +131,48 @@ while True:
         print("Por favor seleccione una opcion valida")
 
 
+def sumar():
+        numero1=int(input("Ingrese el primer numero"))
+        numero2=int(input("Ingrese el segundo numero"))
+        return numero1+numero2
+def restar():
+        numero1=int(input("Ingrese el primer numero"))
+        numero2=int(input("Ingrese el segundo numero"))
+        return numero1-numero2
+def multiplicar():
+        numero1=int(input("Ingrese el primer numero"))
+        numero2=int(input("Ingrese el segundo numero"))
+        return numero1*numero2
+def dividir():
+        numero1=int(input("Ingrese el primer numero"))
+        numero2=int(input("Ingrese el segundo numero"))
+        return numero1/numero2
+def elevar():
+        numero1=int(input("Ingrese el numero"))
+        return math.pow(numero1,2)
+
+print ("Calculadora normal")
+while True:
+    numero=int(input("1:sumar, 2:restar, 3:multiplicar, 4:dividir, 5:elevar cuadrado"))
+    if numero>0 and numero<6:
+        if numero==1:
+            print ("El resultado de la suma es: ",sumar())
+        else:
+            if numero==2:
+                print ("El resultado de la resta es: ",restar())
+            else:
+                if numero==3:
+                    print ("El resultado de la multiplicacion es: ",multiplicar())
+                else:
+                    if numero==4:
+                        print ("El resultado de la division es: ",dividir())
+                    else:
+                        if numero==5:
+                            print ("El resultado de la elevacion es: ",elevar())
+        break
+    else:
+        print("Por favor seleccione una opcion valida")
+
 print("Calculadora de indice de masa corporal")
 a = float(input ("Su altura en metros por favor: "))
 est = a
